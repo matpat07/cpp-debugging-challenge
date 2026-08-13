@@ -53,7 +53,7 @@ public:
 template <class T>
 T maximum(T a, T b)
 {
-    if (a < b)
+    if (a > b)
         return a;
 
     return b;
