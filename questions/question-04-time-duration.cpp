@@ -22,7 +22,7 @@ public:
     Duration(int h, int m)
     {
         hours = h;
-        minutes == m;
+        minutes = m;
     }
 
     Duration operator+(Duration other)
