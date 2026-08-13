@@ -47,7 +47,7 @@ public:
             return true;
 
         if (hours == other.hours &&
-            minutes < other.minutes)
+            minutes > other.minutes)
             return true;
 
         return false;
