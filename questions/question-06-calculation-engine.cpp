@@ -16,6 +16,8 @@ public:
         double amount,
         double rate) = 0;
 
+    virtual ~Service() = default;
+
     void validate(double amount)
     {
         if (amount < 0)
