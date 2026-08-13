@@ -94,7 +94,7 @@ int main()
                     employeeAmount)
              << endl;
     }
-    catch (runtime_error e)
+    catch (const exception& e)
     {
         cout << "Runtime error: "
              << e.what() << endl;
