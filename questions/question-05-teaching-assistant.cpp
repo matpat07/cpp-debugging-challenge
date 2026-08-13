@@ -23,7 +23,7 @@ public:
     }
 };
 
-class Student : public Person
+class Student : virtual public Person
 {
 protected:
     int rollNo;
@@ -44,7 +44,7 @@ public:
     }
 };
 
-class Employee : public Person
+class Employee : virtual public Person
 {
 protected:
     int employeeId;
@@ -79,8 +79,9 @@ public:
         int r,
         int id,
         int h)
-        : Student(n, r),
-          Employee(n, id)
+        : Person(n),
+        Student(n, r),
+        Employee(n, id)
     {
         hours = h;
         cout << "Teaching Assistant created"
