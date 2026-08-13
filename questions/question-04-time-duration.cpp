@@ -32,7 +32,7 @@ public:
         result.hours = hours + other.hours;
         result.minutes = minutes + other.minutes;
 
-        if (result.minutes > 60)
+        if (result.minutes >= 60)
         {
             result.hours++;
             result.minutes -= 60;
