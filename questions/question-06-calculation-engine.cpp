@@ -72,7 +72,7 @@ int main()
     try
     {
         services[0]->validate(amount);
-        services[1]->validate(rate);
+        services[1]->validate(amount);
 
         double studentAmount =
             services[0]->calculate(
