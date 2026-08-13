@@ -41,7 +41,7 @@ void printPrimeFactors(int n)
     {
         while (n % i == 0)
         {
-            cout << n << " ";
+            cout << i << " ";
             n = n / i;
         }
     }
