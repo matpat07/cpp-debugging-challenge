@@ -91,7 +91,8 @@ public:
     void display()
     {
         showPerson();
-        showRole();
+        Student::showRole();
+        Employee::showRole();
 
         cout << "Working hours: "
              << hours << endl;
