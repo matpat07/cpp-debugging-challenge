@@ -27,7 +27,7 @@ int removeDuplicatePriorities(int priority[], int n)
 
     int index = 0;
 
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i < n; i++)
     {
         if (priority[i] != priority[index])
         {
@@ -36,7 +36,7 @@ int removeDuplicatePriorities(int priority[], int n)
         }
     }
 
-    return index;
+    return index+1;
 }
 
 void display(int priority[], int n)
